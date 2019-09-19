@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <android.support.v7.widget.CardView
+        android:id="@+id/imageHolder"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:contentPadding="@dimen/_20sdp"
+        android:layout_alignParentTop="true"
+        >
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_below="@+id/imageHolder"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/bottomView"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:text="My ERRAND \n DELIVERY"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/splash"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/bottomView"
+        android:layout_height="@dimen/_200sdp"
+        android:backgroundTint="@color/colorRed"
+        android:background="@drawable/bg_curved"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

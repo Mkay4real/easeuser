@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/imageHolder"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="@dimen/_20sdp"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="@dimen/_20sdp"
+
+        app:contentPadding="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        >
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_above="@+id/imageHolder"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            android:text="Find Foods you love"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Discover the best food from over 1000 restaurants"
+            android:textColor="#6e7faa"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="normal"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/_25sdp"
+            android:layout_gravity="center_horizontal|center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="@dimen/_5sdp"
+                android:backgroundTint="@color/colorRed"
+                android:background="@drawable/circle_dot"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="@dimen/_5sdp"
+                android:backgroundTint="@color/dark_gray"
+                android:background="@drawable/circle_dot"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="@dimen/_5sdp"
+                android:backgroundTint="@color/dark_gray"
+                android:background="@drawable/circle_dot"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="@dimen/_5sdp"
+                android:backgroundTint="@color/dark_gray"
+                android:background="@drawable/circle_dot"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
